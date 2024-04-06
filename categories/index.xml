@@ -6,16 +6,7 @@
         <description>Recent content in Categories on 凉水壶</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>凉水壶</copyright>
-        <lastBuildDate>Sat, 06 Apr 2024 02:11:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Cc</title>
-        <link>http://localhost:1313/categories/cc/</link>
-        <pubDate>Sat, 06 Apr 2024 02:11:00 +0800</pubDate>
-        
-        <guid>http://localhost:1313/categories/cc/</guid>
-        <description></description>
-        </item>
-        <item>
+        <copyright>凉水壶</copyright><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Test</title>
         <link>http://localhost:1313/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
