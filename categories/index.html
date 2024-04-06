@@ -6,7 +6,26 @@
 
 <link rel='canonical' href='http://localhost:1313/categories/'>
 
-<link rel="stylesheet" href="/scss/style.min.10eac975d5c5dd106aef72f31b4566418409f068f2b06d369ab38d6076ec2d53.css"><meta property='og:title' content="Categories">
+<link rel="stylesheet" href="/scss/style.min.3a6b08c4d6124a319df2f8a35c45bffdfd1380e286b59d83862113f768e87a78.css"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var int = setInterval(fixCount, 100);
+        var busuanziSiteOffset =  1 ;
+        var busuanziVisitorOffset =  1 ;
+
+        function fixCount() {
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                clearInterval(int);
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + busuanziSiteOffset);
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + busuanziVisitorOffset);
+            }
+        }
+    });
+</script><meta property='og:title' content="Categories">
 <meta property='og:description' content="凉水壶的个人博客">
 <meta property='og:url' content='http://localhost:1313/categories/'>
 <meta property='og:site_name' content='凉水壶'>
@@ -315,6 +334,10 @@
 
     <div class="tagCloud-tags">
         
+            <a href="/categories/cc/" class="font_size_1">
+                Cc
+            </a>
+        
     </div>
 </section>
 
@@ -336,6 +359,10 @@
 
     <div class="tagCloud-tags">
         
+            <a href="/tags/tt/" class="font_size_1">
+                Tt
+            </a>
+        
     </div>
 </section>
             
@@ -353,7 +380,7 @@
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">1 个页面</h3>
+                <h3 class="section-count">2 个页面</h3>
                 <h1 class="section-term">Categories</h1>
                 
             </div>
@@ -363,9 +390,37 @@
     <section class="article-list--compact">
         
             <article>
+    <a href="/categories/cc/">
+        <div class="article-details">
+            <h2 class="article-title">Cc</h2>
+
+
+            
+
+            
+            <footer class="article-time">
+                <time datetime='2024-04-06T02:11:00&#43;08:00'>Apr 06, 2024</time>
+            </footer>
+        </div>
+    </a>
+</article>
+
+
+        
+            <article>
     <a href="/categories/test/">
         <div class="article-details">
             <h2 class="article-title">Test</h2>
+
+
+            
+            <div class="article-subtitle">
+                This is an example category
+            </div>
+
+            
+
+            
             <footer class="article-time">
                 <time datetime='0001-01-01T00:00:00Z'>Jan 01, 0001</time>
             </footer>
@@ -378,29 +433,65 @@
         
     </a>
 </article>
+
+
         
     </section>
 <footer class="site-footer">
     <section class="copyright">
-        &copy; 
+        &copy;
         
-            2020 - 
+        2020 -
         
         2024 凉水壶
     </section>
+
+
     
+    <section class="running-time powerby">
+        本博客已稳定运行
+        <span id="runningdays" class="running-days"></span>
+    </section>
+
     
+    <section class="totalcount powerby">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        发表了1篇文章 ·
+        总计0.09k字
+    </section>
+
+
 
 
     <section class="powerby">
-  
-            
-              
+
+
+        
+        <span id="busuanzi_container_site_pv" style='display:none'> 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+        </span>·
+        <span id="busuanzi_container_site_uv" style='display:none'> 总访客数 <span id="busuanzi_value_site_uv"></span>
+            人</span>
+
+
+
+
+        
         
     </section>
 </footer>
-
-
 
 
             </main>
@@ -460,6 +551,25 @@
         });
     </script>
 </body>
+
+
+
+<script>
+    setInterval(function(){
+    let s1 = '2024-4-05'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60 )) / (1000 * 60));
+    let miao = Math.floor((timeDifference %  (1000 * 60)) / (1000));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟"+ miao + "秒";
+    document.getElementById('runningdays').innerHTML = result;
+},1000); 
+</script>
 
     </body>
 </html>
